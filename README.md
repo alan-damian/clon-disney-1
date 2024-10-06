@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# App clon de Disney+
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto esta hosteado en firebase (https://disney-clone-v1-3c4a2.web.app/).
 
 ## Available Scripts
 
