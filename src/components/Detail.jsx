@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { db } from '../firebase';
 import { doc, getDoc } from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
+import Suggestions from './Suggestions';
 
 const Container = styled.div`
     position: relative;
@@ -227,6 +228,7 @@ const Detail = (props) => {
                 <SubTitle>{detailData.subTitle}</SubTitle>
                 <Description>{detailData.description}</Description>
             </ContentMeta>
+            <Suggestions />
         </Container>
     )
 }
