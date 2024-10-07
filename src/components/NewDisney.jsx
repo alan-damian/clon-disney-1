@@ -59,7 +59,7 @@ const NewDisney = (props) => {
 
     return (
         <Container>
-            <h2>New Disney+</h2>
+            <h2>New Video+</h2>
             <Content>
                 {movies &&
                     movies.map((movie, key) => (

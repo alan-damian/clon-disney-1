@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
-const Login = (props) => {
+
+
+
+const Login = () => {
+
   return (
     <Container>
       <Content>
         <CTA>
-          <CTALogoOne src="/images/cta-logo-one.svg" alt="" />
-          <SignUp>GET ALL THERE</SignUp>
+          <CTALogoOne src="/images/background-video.png" alt="" />
+          <SignUp href="https://github.com/alan-damian/clon-disney-1" >SEE THE SOURCE CODE</SignUp>
           <Description>
-            Get Premier Access to Raya and the Last Dragon for an additional fee
-            with a Disney+ subscription. As of 03/26/21, the price of Disney+
-            and The Disney Bundle will increase by $1.
+            Get Premier Access to a very funny experience in the new VIDEO+.
           </Description>
-          <CTALogoTwo src="/images/cta-logo-two.png" alt="" />
         </CTA>
         <BgImage />
       </Content>
@@ -81,6 +82,7 @@ const SignUp = styled.a`
   padding: 16.5px 0;
   border: 1px solid transparent;
   border-radius: 4px;
+  text-decoration: none;
 
   &:hover {
     background-color: #0483ee;
@@ -95,12 +97,6 @@ const Description = styled.p`
   letter-spacing: 1.5px;
 `;
 
-const CTALogoTwo = styled.img`
-  max-width: 600px;
-  margin-bottom: 20px;
-  display: inline-block;
-  vertical-align: bottom;
-  width: 100%;
-`;
+
 
 export default Login;

@@ -106,7 +106,7 @@ const NavMenu = styled.div`
 
 `;
 
-const Login = styled.a`
+const Sign = styled.a`
     background-color: rgba(0, 0, 0, 0.6);
     padding: 0px 16px;
     text-transform: uppercase;
@@ -119,6 +119,7 @@ const Login = styled.a`
         background-color: #f9f9f9;
         color: #000;
         border-color: transparent;
+        cursor: pointer;
     }
 `;
 
@@ -165,7 +166,7 @@ const SignOut = styled.div`
     }
 `;
 
-const Header = (props) => {
+const Header = ({ onSignIn }) => {
 
     const dispatch = useDispatch();
     const history = useNavigate();
@@ -206,12 +207,13 @@ const Header = (props) => {
 
     return (
         <Nav className="header">
+        
             <Logo>
-                <img src='/images/logo.svg' alt='disney'/>
+                <img src='/images/background-video.png' alt='video'/>
             </Logo>
 
           {!isSignedIn ? (
-                <Login onClick={handleSignIn}>Login</Login>) : 
+                <Sign onClick={handleSignIn}>Login</Sign>) : 
                 (<>
 
                 <NavMenu>
