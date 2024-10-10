@@ -1,6 +1,6 @@
 # App clon de Disney+
 
-Este proyecto esta hosteado en firebase (https://disney-clone-v1-3c4a2.web.app/).
+Este proyecto esta hosteado en firebase (https://play-video-751b5.web.app/).
 
 ## Funciones disponibles
 
